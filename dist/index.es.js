@@ -176,7 +176,7 @@ function index (opt) {
 					var attrs = {src: src};
 					var mode = node.mode || defaultmode;
 					if (mode) { attrs.type = mode; }
-					attrs = Object.entries(function (ref) {
+					attrs = Object.entries(attrs).map(function (ref) {
 						var key = ref[0];
 						var val = ref[1];
 
